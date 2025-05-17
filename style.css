@@ -1,0 +1,98 @@
+:root {
+  --primary-color: #4635b1; /* Judul, nama */
+  --second-color: #b771e5; /* Tombol & hover */
+  --third-color: #aeea94; /* CTA / Aksi kuat */
+  --fourth-color: #fffbca; /* Footer / background soft */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  padding: 20px 30px;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+nav .logo h1 {
+  font-size: 30px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+nav .btn-contact {
+  border: none;
+  background-color: var(--second-color);
+  padding: 15px;
+  border-radius: 20px;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3;
+}
+
+nav .btn-contact:hover {
+  color: var(--primary-color);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main .left-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  gap: 20px;
+}
+
+main .left-content h1 {
+  font-size: 50px;
+  color: var(--primary-color);
+}
+
+main .right-content img {
+  width: 700px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--fourth-color);
+  padding: 20px 30px;
+}
+
+footer h3 {
+  color: var(--primary-color);
+}
